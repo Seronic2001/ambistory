@@ -207,7 +207,7 @@ Deployment notes (measured on the deployed checkpoints):
   full-precision scores to a correlation of ~0.03–0.08 (test ρ 0.70 → 0.13). The culprit is the feed-forward layers
   (DeBERTa-v3's activation outliers): quantizing only those 48 layers already breaks it, while quantizing only the
   attention layers keeps 0.98 correlation but is just 1.17× faster. So the app serves the weights unquantized.
-- **CPU cost:** ~1.2 s per story–meaning pair per model on a 4-core laptop, i.e. ~2.3 s per score with both seeds;
+- **CPU cost:** ~1.2 s per story–meaning pair per model on a laptop CPU (4 PyTorch threads), i.e. ~2.3 s per score with both seeds;
   ~3.3 GB RAM (fp32), which is more than Streamlit Community Cloud provides.
 - **Hosting:** Hugging Face Docker/Gradio Spaces need a PRO subscription even on the free CPU tier, so there is no
   hosted demo; the app runs locally and fetches the weights from Hugging Face.
