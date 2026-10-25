@@ -1,0 +1,158 @@
+[{"stream_name":"stdout","time":5.101367151,"data":"/usr/bin/python3 /tmp/code/kaggle/e13_train.py --data /tmp/code/data --out /kaggle/working/a13-regression-mse --epochs 6 --head regression --kl_w 0 --mse_w 1 --rank_w 0 --test_gold /kaggle/input/datasets/shubhadeepmandal/inlp-project/test.json\n"}
+,{"stream_name":"stdout","time":28.179625893,"data":"data=/tmp/code/data\n"}
+,{"stream_name":"stdout","time":28.179672126,"data":"out=/kaggle/working/a13-regression-mse\n"}
+,{"stream_name":"stdout","time":28.179677379,"data":"devices=['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":28.179681672,"data":"torch=2.11.0+cu128 transformers=5.16.1\n"}
+,{"stream_name":"stderr","time":28.71185487,"data":"\rFetching 5 files:   0%|          | 0/5 [00:00\u003c?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":33.581157505,"data":"\rFetching 5 files:  20%|██        | 1/5 [00:00\u003c00:00,  6.04it/s]\rFetching 5 files:  80%|████████  | 4/5 [00:00\u003c00:00,  4.96it/s]\rFetching 5 files: 100%|██████████| 5/5 [00:04\u003c00:00,  1.30s/it]\rFetching 5 files: 100%|██████████| 5/5 [00:04\u003c00:00,  1.01it/s]\n"}
+,{"stream_name":"stdout","time":38.362218309,"data":"backbone ready at /tmp/e13_models/deberta-v3-large (10s)\n"}
+,{"stream_name":"stdout","time":38.45215698,"data":"rows: train+dev=2868 test=930 | example input: The old machine hummed in the corner of the workshop. Clara examined its dusty dials with a furrowed brow. She wondered if it could be brought back to life. The...\n"}
+,{"stream_name":"stdout","time":38.452186199,"data":"5 fold jobs on 2 device(s)\n"}
+,{"stream_name":"stdout","time":54.530344756,"data":"20:59:38 [gpu0] fold 1 seed 42: inner-train=1938 inner-val=354 outer-val=576\n"}
+,{"stream_name":"stdout","time":54.530754682,"data":"20:59:38 [gpu1] fold 0 seed 42: inner-train=1932 inner-val=360 outer-val=576\n"}
+,{"stream_name":"stderr","time":55.249481022,"data":"[transformers] The tokenizer you are loading from '/tmp/e13_models/deberta-v3-large' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.\n"}
+,{"stream_name":"stderr","time":55.250187385,"data":"[transformers] The tokenizer you are loading from '/tmp/e13_models/deberta-v3-large' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.\n"}
+,{"stream_name":"stderr","time":57.25989236,"data":"\rLoading weights:   0%|          | 0/390 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/390 [00:00\u003c?, ?it/s]\rLoading weights:  54%|█████▍    | 212/390 [00:00\u003c00:00, 2103.59it/s]\rLoading weights:  55%|█████▍    | 214/390 [00:00\u003c00:00, 2135.79it/s]\rLoading weights: 100%|██████████| 390/390 [00:00\u003c00:00, 2160.74it/s]\n"}
+,{"stream_name":"stderr","time":57.272511635,"data":"\rLoading weights: 100%|██████████| 390/390 [00:00\u003c00:00, 2312.37it/s]\n"}
+,{"stream_name":"stderr","time":57.29036675,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /tmp/e13_models/deberta-v3-large\n"}
+,{"stream_name":"stderr","time":57.290399283,"data":"Key                                     | Status     |  | \n"}
+,{"stream_name":"stderr","time":57.29040498,"data":"----------------------------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":57.29042335,"data":"mask_predictions.LayerNorm.bias         | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.29042789,"data":"lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290431869,"data":"lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.29043584,"data":"lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.29043985,"data":"mask_predictions.classifier.bias        | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290443888,"data":"lm_predictions.lm_head.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290447784,"data":"mask_predictions.dense.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290451799,"data":"mask_predictions.dense.weight           | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290455754,"data":"lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290459823,"data":"mask_predictions.classifier.weight      | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290463951,"data":"mask_predictions.LayerNorm.weight       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290467803,"data":"\n"}
+,{"stream_name":"stderr","time":57.290478938,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":57.290507,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":57.290821281,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /tmp/e13_models/deberta-v3-large\n"}
+,{"stream_name":"stderr","time":57.290833312,"data":"Key                                     | Status     |  | \n"}
+,{"stream_name":"stderr","time":57.290837474,"data":"----------------------------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":57.29084152,"data":"lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290845447,"data":"mask_predictions.LayerNorm.bias         | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290849424,"data":"mask_predictions.dense.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290853421,"data":"mask_predictions.classifier.weight      | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290857574,"data":"lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290880436,"data":"mask_predictions.classifier.bias        | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290884603,"data":"mask_predictions.dense.weight           | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290888697,"data":"lm_predictions.lm_head.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290892744,"data":"mask_predictions.LayerNorm.weight       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290896639,"data":"lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290900682,"data":"lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":57.290904909,"data":"\n"}
+,{"stream_name":"stderr","time":57.290908779,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":57.290912584,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":122.496158627,"data":"21:00:46 [gpu1]   ep 1/6 loss=1.3885 inner-val rho=0.4130 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":124.391936917,"data":"21:00:48 [gpu0]   ep 1/6 loss=1.4033 inner-val rho=0.4366 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":186.403669513,"data":"21:01:50 [gpu1]   ep 2/6 loss=0.9154 inner-val rho=0.5612 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":192.249275973,"data":"21:01:55 [gpu0]   ep 2/6 loss=0.9862 inner-val rho=0.5889 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":250.522712572,"data":"21:02:54 [gpu1]   ep 3/6 loss=0.5764 inner-val rho=0.5899 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":260.169350137,"data":"21:03:03 [gpu0]   ep 3/6 loss=0.5730 inner-val rho=0.6060 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":314.005743687,"data":"21:03:57 [gpu1]   ep 4/6 loss=0.3595 inner-val rho=0.5846 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":327.361155856,"data":"21:04:11 [gpu0]   ep 4/6 loss=0.3790 inner-val rho=0.6245 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":376.918225911,"data":"21:05:00 [gpu1]   ep 5/6 loss=0.2683 inner-val rho=0.6027 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":394.418427881,"data":"21:05:18 [gpu0]   ep 5/6 loss=0.2809 inner-val rho=0.6139 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":440.570166174,"data":"21:06:04 [gpu1]   ep 6/6 loss=0.2270 inner-val rho=0.6032 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":450.771024557,"data":"21:06:14 [gpu1] fold 0 seed 42: OUTER rho=0.6141 acc=0.7865 (6.6 min)\n"}
+,{"stream_name":"stdout","time":451.060151018,"data":"21:06:14 [gpu1] fold 2 seed 42: inner-train=1944 inner-val=348 outer-val=576\n"}
+,{"stream_name":"stderr","time":451.398635389,"data":"[transformers] The tokenizer you are loading from '/tmp/e13_models/deberta-v3-large' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.\n"}
+,{"stream_name":"stderr","time":451.622488661,"data":"\rLoading weights:   0%|          | 0/390 [00:00\u003c?, ?it/s]\rLoading weights:  66%|██████▋   | 259/390 [00:00\u003c00:00, 2555.26it/s]\rLoading weights: 100%|██████████| 390/390 [00:00\u003c00:00, 2606.62it/s]\n"}
+,{"stream_name":"stderr","time":451.632640282,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /tmp/e13_models/deberta-v3-large\n"}
+,{"stream_name":"stderr","time":451.63266855,"data":"Key                                     | Status     |  | \n"}
+,{"stream_name":"stderr","time":451.632674453,"data":"----------------------------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":451.632679428,"data":"lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632684289,"data":"mask_predictions.LayerNorm.bias         | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632689193,"data":"mask_predictions.dense.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632694501,"data":"mask_predictions.classifier.weight      | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632699201,"data":"lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632703934,"data":"mask_predictions.classifier.bias        | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632708784,"data":"mask_predictions.dense.weight           | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632713802,"data":"lm_predictions.lm_head.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632733247,"data":"mask_predictions.LayerNorm.weight       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632737612,"data":"lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.63275359,"data":"lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":451.632757666,"data":"\n"}
+,{"stream_name":"stderr","time":451.63276306,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":451.632766816,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":461.023248924,"data":"21:06:24 [gpu0]   ep 6/6 loss=0.2366 inner-val rho=0.6175 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":461.023285744,"data":"21:06:24 [gpu0]   early stop at epoch 6\n"}
+,{"stream_name":"stdout","time":472.089944427,"data":"21:06:35 [gpu0] fold 1 seed 42: OUTER rho=0.6691 acc=0.7934 (7.0 min)\n"}
+,{"stream_name":"stdout","time":472.485843203,"data":"21:06:36 [gpu0] fold 3 seed 42: inner-train=1926 inner-val=372 outer-val=570\n"}
+,{"stream_name":"stderr","time":472.801932231,"data":"[transformers] The tokenizer you are loading from '/tmp/e13_models/deberta-v3-large' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.\n"}
+,{"stream_name":"stderr","time":473.020534472,"data":"\rLoading weights:   0%|          | 0/390 [00:00\u003c?, ?it/s]\rLoading weights:  69%|██████▉   | 271/390 [00:00\u003c00:00, 2708.23it/s]\rLoading weights: 100%|██████████| 390/390 [00:00\u003c00:00, 2775.29it/s]\n"}
+,{"stream_name":"stderr","time":473.030278433,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /tmp/e13_models/deberta-v3-large\n"}
+,{"stream_name":"stderr","time":473.030305153,"data":"Key                                     | Status     |  | \n"}
+,{"stream_name":"stderr","time":473.030310491,"data":"----------------------------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":473.030315019,"data":"mask_predictions.LayerNorm.bias         | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030319647,"data":"lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.03032416,"data":"lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030328494,"data":"lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030333002,"data":"mask_predictions.classifier.bias        | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030337396,"data":"lm_predictions.lm_head.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030341858,"data":"mask_predictions.dense.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030346139,"data":"mask_predictions.dense.weight           | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030350646,"data":"lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030355604,"data":"mask_predictions.classifier.weight      | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030360175,"data":"mask_predictions.LayerNorm.weight       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":473.030364756,"data":"\n"}
+,{"stream_name":"stderr","time":473.030369042,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":473.030373379,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":515.303002378,"data":"21:07:19 [gpu1]   ep 1/6 loss=1.3427 inner-val rho=0.3512 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":539.274794763,"data":"21:07:42 [gpu0]   ep 1/6 loss=1.3618 inner-val rho=0.4675 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":579.657014162,"data":"21:08:23 [gpu1]   ep 2/6 loss=0.9927 inner-val rho=0.5015 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":605.44781414,"data":"21:08:49 [gpu0]   ep 2/6 loss=0.9739 inner-val rho=0.6050 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":644.336008522,"data":"21:09:28 [gpu1]   ep 3/6 loss=0.6106 inner-val rho=0.4961 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":672.588545723,"data":"21:09:56 [gpu0]   ep 3/6 loss=0.5800 inner-val rho=0.6516 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":707.474777597,"data":"21:10:31 [gpu1]   ep 4/6 loss=0.3917 inner-val rho=0.5073 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":738.821465647,"data":"21:11:02 [gpu0]   ep 4/6 loss=0.4134 inner-val rho=0.6565 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":771.263218323,"data":"21:11:34 [gpu1]   ep 5/6 loss=0.2817 inner-val rho=0.5312 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":805.380465509,"data":"21:12:09 [gpu0]   ep 5/6 loss=0.3077 inner-val rho=0.6504 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":834.897186969,"data":"21:12:38 [gpu1]   ep 6/6 loss=0.2560 inner-val rho=0.5295 rank-pairs=0 skipped=0 (1.0 min)\n"}
+,{"stream_name":"stdout","time":844.649406447,"data":"21:12:48 [gpu1] fold 2 seed 42: OUTER rho=0.6504 acc=0.7569 (6.6 min)\n"}
+,{"stream_name":"stdout","time":845.010036646,"data":"21:12:48 [gpu1] fold 4 seed 42: inner-train=1950 inner-val=348 outer-val=570\n"}
+,{"stream_name":"stderr","time":845.310237403,"data":"[transformers] The tokenizer you are loading from '/tmp/e13_models/deberta-v3-large' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.\n"}
+,{"stream_name":"stderr","time":845.531950109,"data":"\rLoading weights:   0%|          | 0/390 [00:00\u003c?, ?it/s]\rLoading weights:  64%|██████▍   | 250/390 [00:00\u003c00:00, 2482.69it/s]\rLoading weights: 100%|██████████| 390/390 [00:00\u003c00:00, 2726.11it/s]\n"}
+,{"stream_name":"stderr","time":845.541233353,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /tmp/e13_models/deberta-v3-large\n"}
+,{"stream_name":"stderr","time":845.541260561,"data":"Key                                     | Status     |  | \n"}
+,{"stream_name":"stderr","time":845.541266288,"data":"----------------------------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":845.541270965,"data":"lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541275675,"data":"mask_predictions.LayerNorm.bias         | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541280138,"data":"mask_predictions.dense.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541284633,"data":"mask_predictions.classifier.weight      | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541289169,"data":"lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541293565,"data":"mask_predictions.classifier.bias        | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541311768,"data":"mask_predictions.dense.weight           | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541315683,"data":"lm_predictions.lm_head.bias             | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541319247,"data":"mask_predictions.LayerNorm.weight       | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.54132251,"data":"lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541325861,"data":"lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":845.541329085,"data":"\n"}
+,{"stream_name":"stderr","time":845.54133232,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":845.541335762,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":871.259966089,"data":"21:13:14 [gpu0]   ep 6/6 loss=0.2692 inner-val rho=0.6522 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":871.259998565,"data":"21:13:14 [gpu0]   early stop at epoch 6\n"}
+,{"stream_name":"stdout","time":882.581460135,"data":"21:13:26 [gpu0] fold 3 seed 42: OUTER rho=0.6181 acc=0.7526 (6.8 min)\n"}
+,{"stream_name":"stdout","time":909.435133149,"data":"21:13:53 [gpu1]   ep 1/6 loss=1.4301 inner-val rho=0.3765 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":973.072913907,"data":"21:14:56 [gpu1]   ep 2/6 loss=1.0587 inner-val rho=0.5719 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":1037.575262801,"data":"21:16:01 [gpu1]   ep 3/6 loss=0.5695 inner-val rho=0.5890 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":1101.427660785,"data":"21:17:05 [gpu1]   ep 4/6 loss=0.3983 inner-val rho=0.6105 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":1165.532336706,"data":"21:18:09 [gpu1]   ep 5/6 loss=0.2813 inner-val rho=0.6116 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":1229.358295565,"data":"21:19:13 [gpu1]   ep 6/6 loss=0.2367 inner-val rho=0.6151 rank-pairs=0 skipped=0 (1.1 min)\n"}
+,{"stream_name":"stdout","time":1239.410023323,"data":"21:19:23 [gpu1] fold 4 seed 42: OUTER rho=0.5679 acc=0.7439 (6.6 min)\n"}
+,{"stream_name":"stdout","time":1241.773551932,"data":"TEST (official metric) rho=0.7023 acc=0.8065 | without blend rho=0.6768\n"}
+,{"stream_name":"stdout","time":1241.775984265,"data":"\n"}
+,{"stream_name":"stdout","time":1241.776006599,"data":"OOF rho=0.6173 acc=0.7667 | per-fold rho=0.6239+-0.0347 | rank blend used (OOF rho 0.6496)\n"}
+,{"stream_name":"stdout","time":1241.776012616,"data":"wrote /kaggle/working/a13-regression-mse/predictions.jsonl  (20.2 min total)\n"}
+,{"stream_name":"stderr","time":1244.381669136,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1244.381698362,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1244.65965876,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1244.659689265,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1245.424963074,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1246.41252297,"data":"[NbConvertApp] Writing 280558 bytes to __results__.html\n"}
+]

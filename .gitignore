@@ -1,0 +1,5 @@
+data/*.json
+__pycache__/
+tests/_tmp_*
+models/*/model_seed*/
+kaggle/kernels/

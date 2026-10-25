@@ -1,0 +1,45 @@
+[{"stream_name":"stdout","time":2.009780554,"data":"/usr/bin/python3 /tmp/code/kaggle/e12_train.py --data /tmp/code/data --out /kaggle/working/a12-frozen-encoder --ft_epochs 0 --test_gold /kaggle/input/datasets/shubhadeepmandal/inlp-project/test.json\n"}
+,{"stream_name":"stdout","time":10.277135231,"data":"data=/tmp/code/data\n"}
+,{"stream_name":"stdout","time":10.277175721,"data":"out=/kaggle/working/a12-frozen-encoder\n"}
+,{"stream_name":"stdout","time":10.277180761,"data":"devices=['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stderr","time":11.604198813,"data":"\rFetching 11 files:   0%|          | 0/11 [00:00\u003c?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":13.533802427,"data":"\rFetching 11 files:   9%|▉         | 1/11 [00:00\u003c00:01,  8.05it/s]\rFetching 11 files: 100%|██████████| 11/11 [00:01\u003c00:00,  5.48it/s]\rFetching 11 files: 100%|██████████| 11/11 [00:01\u003c00:00,  5.53it/s]\n"}
+,{"stream_name":"stderr","time":15.512668757,"data":"\rFetching 7 files:   0%|          | 0/7 [00:00\u003c?, ?it/s]\rFetching 7 files:  71%|███████▏  | 5/7 [00:00\u003c00:00, 46.83it/s]\rFetching 7 files: 100%|██████████| 7/7 [00:01\u003c00:00,  3.61it/s]\n"}
+,{"stream_name":"stdout","time":15.801967359,"data":"rows: train+dev=2868 test=930 | fold sizes=[576, 576, 576, 570, 570]\n"}
+,{"stream_name":"stderr","time":48.003693284,"data":"\rLoading weights:   0%|          | 0/202 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/202 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 202/202 [00:00\u003c00:00, 2484.54it/s]\n"}
+,{"stream_name":"stderr","time":48.004243379,"data":"\rLoading weights: 100%|██████████| 202/202 [00:00\u003c00:00, 2414.04it/s]\n"}
+,{"stream_name":"stdout","time":54.05495188,"data":"20:55:13 [gpu1] CE shard 0/2: 1899 pairs in 6s (entailment idx 1)\n"}
+,{"stream_name":"stdout","time":54.129424705,"data":"20:55:13 [gpu0] CE shard 1/2: 1899 pairs in 6s (entailment idx 1)\n"}
+,{"stream_name":"stdout","time":58.02276181,"data":"CE scores ready (48s)\n"}
+,{"stream_name":"stdout","time":58.022790028,"data":"5 fold jobs on 2 device(s)\n"}
+,{"stream_name":"stdout","time":60.234893283,"data":"20:55:19 [gpu0] fold 0 seed 42: inner-train=1932 inner-val=360 outer-val=576 test=930\n"}
+,{"stream_name":"stdout","time":60.265537674,"data":"20:55:19 [gpu1] fold 1 seed 42: inner-train=1938 inner-val=354 outer-val=576 test=930\n"}
+,{"stream_name":"stderr","time":66.639572972,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2976.96it/s]\n"}
+,{"stream_name":"stderr","time":66.658658682,"data":"\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2715.75it/s]\n"}
+,{"stream_name":"stdout","time":99.146320434,"data":"20:55:58 [gpu0]   MLP best inner-val rho=0.5059\n"}
+,{"stream_name":"stdout","time":99.147579162,"data":"20:55:58 [gpu1]   MLP best inner-val rho=0.4136\n"}
+,{"stream_name":"stdout","time":99.149931438,"data":"20:55:58 [gpu0] fold 0 seed 42: OUTER rho=0.4971 acc=0.7101 (0.6 min)\n"}
+,{"stream_name":"stdout","time":99.151331301,"data":"20:55:58 [gpu1] fold 1 seed 42: OUTER rho=0.4229 acc=0.6094 (0.6 min)\n"}
+,{"stream_name":"stdout","time":99.217219988,"data":"20:55:58 [gpu0] fold 2 seed 42: inner-train=1944 inner-val=348 outer-val=576 test=930\n"}
+,{"stream_name":"stdout","time":99.219528217,"data":"20:55:58 [gpu1] fold 3 seed 42: inner-train=1926 inner-val=372 outer-val=570 test=930\n"}
+,{"stream_name":"stderr","time":99.349544207,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 4375.27it/s]\n"}
+,{"stream_name":"stderr","time":99.372124222,"data":"\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2819.69it/s]\n"}
+,{"stream_name":"stdout","time":136.075283744,"data":"20:56:35 [gpu1]   MLP best inner-val rho=0.4535\n"}
+,{"stream_name":"stdout","time":136.078816455,"data":"20:56:35 [gpu1] fold 3 seed 42: OUTER rho=0.3901 acc=0.6175 (0.6 min)\n"}
+,{"stream_name":"stdout","time":136.147160955,"data":"20:56:35 [gpu1] fold 4 seed 42: inner-train=1950 inner-val=348 outer-val=570 test=930\n"}
+,{"stream_name":"stdout","time":136.184675295,"data":"20:56:35 [gpu0]   MLP best inner-val rho=0.5121\n"}
+,{"stream_name":"stdout","time":136.188186361,"data":"20:56:35 [gpu0] fold 2 seed 42: OUTER rho=0.4704 acc=0.6458 (0.6 min)\n"}
+,{"stream_name":"stderr","time":136.304641498,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2642.94it/s]\n"}
+,{"stream_name":"stdout","time":155.579535815,"data":"20:56:54 [gpu1]   MLP best inner-val rho=0.4266\n"}
+,{"stream_name":"stdout","time":155.582948763,"data":"20:56:54 [gpu1] fold 4 seed 42: OUTER rho=0.3771 acc=0.5877 (0.3 min)\n"}
+,{"stream_name":"stdout","time":156.93134223,"data":"TEST (official metric) rho=0.3753 acc=0.5731 | without blend rho=0.3753\n"}
+,{"stream_name":"stdout","time":156.934783543,"data":"\n"}
+,{"stream_name":"stdout","time":156.934799264,"data":"OOF rho=0.4175 acc=0.6342 | per-fold rho=0.4315+-0.0460 | rank blend NOT used (OOF rho 0.4173)\n"}
+,{"stream_name":"stdout","time":156.934806344,"data":"wrote /kaggle/working/a12-frozen-encoder/predictions.jsonl  (2.4 min total)\n"}
+,{"stream_name":"stderr","time":159.375564037,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":159.375592695,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":159.61462701,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":159.61465025,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":160.351521247,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":161.349125089,"data":"[NbConvertApp] Writing 280106 bytes to __results__.html\n"}
+]

@@ -1,0 +1,29 @@
+id,stage,notebook,validation_protocol,val_spearman,val_acc,test_spearman,test_acc,trustworthy_val
+E01,1,stage1_rnn_baselines/E01_single_encoder_birnn.ipynb,random 85/15 row split of train; tuned on same split,0.072,0.547,,,no
+E02,1,stage1_rnn_baselines/E02_dual_encoder_birnn_glove_frozen.ipynb,random 85/15 row split of train; tuned on same split,0.021,0.535,,,no
+E03,1,stage1_rnn_baselines/E03_dual_encoder_birnn_glove_trainable.ipynb,random 85/15 row split of train; tuned on same split,0.186,0.570,,,no
+E04,2,stage2_loss_ablations/E04_weighted_mse.ipynb,random 85/15 row split of train,0.237,0.617,,,no
+E05,2,stage2_loss_ablations/E05_huber.ipynb,random 85/15 row split of train,0.245,0.608,,,no
+E06,2,stage2_loss_ablations/E06_pairwise_ranking.ipynb,random 85/15 row split of train,0.174,0.541,,,no
+E07,3,stage3_task_aware_rnn/E07_bigru_interactions_setup_ranking.ipynb,setup-grouped 85/15 split of train; 35 Optuna trials on same split,0.572,0.725,,,no (label leak + story leak)
+E08,3,stage3_task_aware_rnn/E08_bigru_kl_head.ipynb,setup-grouped 85/15 split of train; 35 Optuna trials on same split,0.640,0.772,,,no (label leak + story leak)
+E09,3,stage3_task_aware_rnn/E09_siamese_bigru_cross_attention.ipynb,setup-grouped 85/15 split of train+dev; 35 Optuna trials on same split; 5-seed ensemble,0.618,0.810,0.127,0.560,no (label leak + story leak)
+E10,4,stage4_transformers/E10_deberta_cross_encoder_linear_head.ipynb,homonym-grouped 5-fold OOF on train+dev,0.342,0.646,0.392,0.652,mostly
+E11,4,stage4_transformers/E11_deberta_cross_encoder_pca_mlp_head.ipynb,homonym-grouped 5-fold OOF on train+dev,0.355,0.657,0.400,0.652,mostly
+E12,4,stage4_transformers/E12_mpnet_biencoder_geometric_FINAL.ipynb,homonym-grouped 5-fold OOF on train+dev,0.543,0.738,0.535,0.722,mostly
+E12-fixed,4,kaggle/e12_train.py (Kaggle 2xT4; results/e12_fixed_kaggle_v1),homonym-grouped 5-fold OOF on train+dev; inner-split selection; 1 seed,0.538,0.747,0.557,0.744,yes (OOF uses official strict metric)
+E13,4,kaggle/e13_train.py (DeBERTa-v3-large cross-encoder; results/e13_deberta_large_kaggle_v2),homonym-grouped 5-fold OOF on train+dev; inner-split selection; 1 seed; soft-rank blend,0.630,0.787,0.689,0.791,yes
+E12+E13,4,kaggle/ensemble.py (results/ensemble_e12_e13_v1),weights/blend/calibration chosen on OOF,0.649,0.800,0.686,0.812,yes
+E13-6ep,4,kaggle/e13_train.py --epochs 6 (results/e13_deberta_large_6ep_kaggle_v3),homonym-grouped 5-fold OOF on train+dev; inner-split selection; 1 seed; soft-rank blend,0.655,0.803,0.714,0.812,yes
+E12+E13-6ep,4,kaggle/ensemble.py (results/ensemble_e12_e13_6ep_v2),weights/blend/calibration chosen on OOF,0.667,0.813,0.702,0.834,yes
+E12-fixed-3seeds,5,"kaggle/e12_train.py --seeds 42,43,44 (results/e12_fixed_3seeds)",homonym-grouped 5-fold OOF on train+dev; inner-split selection; 3 seeds,0.554,0.757,0.558,0.745,yes
+E13-6ep-3seeds,5,"kaggle/e13_train.py --epochs 6 --seeds 42,43,44 (results/e13_6ep_3seeds)",homonym-grouped 5-fold OOF on train+dev; inner-split selection; 3 seeds; soft-rank blend,0.679,0.812,0.719,0.815,yes
+E12+E13-3seeds,5,kaggle/ensemble.py (results/ensemble_3seeds),weights/blend/calibration chosen on OOF,0.687,0.821,0.709,0.840,yes
+E14-7B,6,"kaggle/llm_judge.py (Qwen2.5-7B-Instruct, hf backend; results/e14_llm_judge_qwen7b)",no training; scored on train+dev with the same folds,0.671,0.769,0.680,0.778,yes
+E14-14B,6,kaggle/llm_judge.py --backend vllm (Qwen2.5-14B-Instruct-AWQ; results/e14_llm_judge_qwen14b),no training; scored on train+dev with the same folds,0.703,0.821,0.742,0.834,yes
+E14-32B,6,kaggle/llm_judge.py --backend vllm (Qwen2.5-32B-Instruct-AWQ; results/e14_llm_judge_qwen32b),no training; scored on train+dev with the same folds,0.756,0.816,0.778,0.837,yes
+E13x3+E14-7B,7,kaggle/ensemble.py (results/ensemble_e13_e14),weights/blend/calibration chosen on OOF,0.735,0.847,0.754,0.848,yes
+E13x3+E14-14B,7,kaggle/ensemble.py (results/ensemble_e13_e14_14b),weights/blend/calibration chosen on OOF,0.753,0.867,0.791,0.865,yes
+E14-14B+E14-32B,6,kaggle/ensemble.py (results/ensemble_e14_14b_32b),weights/blend/calibration chosen on OOF,0.758,0.872,0.784,0.885,yes
+E13x3+E14-14B+E14-32B,7,kaggle/ensemble.py (results/ensemble_e13_e14_14b_32b),equal weights; blend/calibration chosen on OOF,0.778,0.880,0.810,0.901,yes
+E13x3+E14-32B,7,kaggle/ensemble.py (results/ensemble_e13_e14_32b),weights/blend/calibration chosen on OOF,0.783,0.890,0.811,0.899,yes

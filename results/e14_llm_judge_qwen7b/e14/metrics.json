@@ -1,0 +1,67 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": [
+    "plain",
+    "pair",
+    "readers"
+  ],
+  "minutes": 30.474131902058918,
+  "oof": {
+    "spearman": 0.6708997888755931,
+    "accuracy": 0.7684797768479776
+  },
+  "oof_per_prompt": {
+    "plain": {
+      "spearman": 0.6037521905567291,
+      "accuracy": 0.6732914923291492
+    },
+    "pair": {
+      "spearman": 0.6672606587628096,
+      "accuracy": 0.7744072524407253
+    },
+    "readers": {
+      "spearman": 0.5950798032807642,
+      "accuracy": 0.698744769874477
+    }
+  },
+  "per_fold": [
+    {
+      "spearman": 0.6667013211305947,
+      "accuracy": 0.765625
+    },
+    {
+      "spearman": 0.682812163061453,
+      "accuracy": 0.7725694444444444
+    },
+    {
+      "spearman": 0.6682914636749412,
+      "accuracy": 0.7795138888888888
+    },
+    {
+      "spearman": 0.6877690224646298,
+      "accuracy": 0.7614035087719299
+    },
+    {
+      "spearman": 0.6501096028910252,
+      "accuracy": 0.7631578947368421
+    }
+  ],
+  "test": {
+    "spearman": 0.6800292887193016,
+    "accuracy": 0.7784946236559139
+  },
+  "test_per_prompt": {
+    "plain": {
+      "spearman": 0.6106447720636012,
+      "accuracy": 0.7010752688172043
+    },
+    "pair": {
+      "spearman": 0.6573776875165145,
+      "accuracy": 0.7817204301075269
+    },
+    "readers": {
+      "spearman": 0.6171040383457466,
+      "accuracy": 0.7096774193548387
+    }
+  }
+}

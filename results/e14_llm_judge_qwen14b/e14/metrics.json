@@ -1,0 +1,73 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct-AWQ",
+  "backend": "vllm",
+  "prompts": [
+    "plain",
+    "pair",
+    "readers"
+  ],
+  "digit_mass_top20": {
+    "plain": 0.9999997622791116,
+    "pair": 0.999999916879457,
+    "readers": 1.0000000096934298
+  },
+  "minutes": 23.524343105157218,
+  "oof": {
+    "spearman": 0.7031512639014492,
+    "accuracy": 0.8207810320781032
+  },
+  "oof_per_prompt": {
+    "plain": {
+      "spearman": 0.6667109721936123,
+      "accuracy": 0.7716178521617852
+    },
+    "pair": {
+      "spearman": 0.6897696129339268,
+      "accuracy": 0.7758019525801952
+    },
+    "readers": {
+      "spearman": 0.5835780507466601,
+      "accuracy": 0.7301255230125523
+    }
+  },
+  "per_fold": [
+    {
+      "spearman": 0.6792447946549064,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "spearman": 0.7271732071321132,
+      "accuracy": 0.8298611111111112
+    },
+    {
+      "spearman": 0.7027158552225334,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "spearman": 0.6908096407054148,
+      "accuracy": 0.8157894736842105
+    },
+    {
+      "spearman": 0.706912080974732,
+      "accuracy": 0.8333333333333334
+    }
+  ],
+  "test": {
+    "spearman": 0.7418476665324878,
+    "accuracy": 0.8344086021505376
+  },
+  "test_per_prompt": {
+    "plain": {
+      "spearman": 0.7090983812367567,
+      "accuracy": 0.8043010752688172
+    },
+    "pair": {
+      "spearman": 0.7148557147382788,
+      "accuracy": 0.7806451612903226
+    },
+    "readers": {
+      "spearman": 0.6361454937335447,
+      "accuracy": 0.7483870967741936
+    }
+  }
+}

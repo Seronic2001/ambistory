@@ -1,0 +1,62 @@
+{
+  "runs": [
+    "results/e13_6ep_3seeds",
+    "results/e14_llm_judge_qwen14b/e14",
+    "results/e14_llm_judge_qwen32b/e14"
+  ],
+  "single_runs_oof": [
+    {
+      "spearman": 0.638281447772534,
+      "accuracy": 0.7869595536959554
+    },
+    {
+      "spearman": 0.7031512639014492,
+      "accuracy": 0.8207810320781032
+    },
+    {
+      "spearman": 0.7563565824973927,
+      "accuracy": 0.8155509065550907
+    }
+  ],
+  "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "oof_weighted": {
+    "spearman": 0.7782066368443683,
+    "accuracy": 0.8751743375174338
+  },
+  "rank_blend_used": false,
+  "calibration": {
+    "scale": 0.9500000000000002,
+    "shift": 6.661338147750939e-16,
+    "center": 3.0859245467274645
+  },
+  "oof_final": {
+    "spearman": 0.7782066368443683,
+    "accuracy": 0.8804044630404463
+  },
+  "test_single_runs": [
+    {
+      "spearman": 0.6943359830985069,
+      "accuracy": 0.7924731182795699
+    },
+    {
+      "spearman": 0.7418476665324878,
+      "accuracy": 0.8344086021505376
+    },
+    {
+      "spearman": 0.7774680676101251,
+      "accuracy": 0.8365591397849462
+    }
+  ],
+  "test_weighted": {
+    "spearman": 0.8101632496557165,
+    "accuracy": 0.8989247311827957
+  },
+  "test_final": {
+    "spearman": 0.8101632496557165,
+    "accuracy": 0.9010752688172043
+  }
+}

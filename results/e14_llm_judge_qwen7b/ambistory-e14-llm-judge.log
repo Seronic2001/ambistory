@@ -1,0 +1,66 @@
+[{"stream_name":"stdout","time":31.331345573,"data":"data=/kaggle/input/datasets/shubhadeepmandal/ambistory-e12 out=/kaggle/working/e14 model=Qwen/Qwen2.5-7B-Instruct gpus=2 torch=2.11.0+cu128 transformers=5.16.1\n"}
+,{"stream_name":"stderr","time":32.136796315,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":35.628972143,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":102.054087961,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  25%|██▌       | 1/4 [00:47\u003c02:22, 47.39s/it]\rFetching 4 files:  75%|███████▌  | 3/4 [01:03\u003c00:18, 18.19s/it]\rFetching 4 files: 100%|██████████| 4/4 [01:03\u003c00:00, 12.03s/it]\rFetching 4 files: 100%|██████████| 4/4 [01:03\u003c00:00, 15.93s/it]\n"}
+,{"stream_name":"stderr","time":127.4228347,"data":"\rLoading weights:   0%|          | 0/339 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/339 [00:04\u003c22:33,  4.01s/it]\rLoading weights:  12%|█▏        | 42/339 [00:04\u003c00:22, 13.40it/s]\rLoading weights:  16%|█▌        | 54/339 [00:04\u003c00:15, 17.91it/s]\rLoading weights:  19%|█▉        | 64/339 [00:04\u003c00:14, 19.58it/s]\rLoading weights:  23%|██▎       | 77/339 [00:04\u003c00:10, 25.54it/s]\rLoading weights:  25%|██▍       | 84/339 [00:05\u003c00:08, 28.99it/s]\rLoading weights:  27%|██▋       | 91/339 [00:05\u003c00:09, 27.22it/s]\rLoading weights:  30%|██▉       | 101/339 [00:05\u003c00:07, 32.71it/s]\rLoading weights:  33%|███▎      | 112/339 [00:05\u003c00:06, 36.87it/s]\rLoading weights:  35%|███▍      | 118/339 [00:07\u003c00:16, 13.54it/s]\rLoading weights:  37%|███▋      | 124/339 [00:07\u003c00:14, 14.81it/s]\rLoading weights:  40%|████      | 136/339 [00:08\u003c00:11, 17.32it/s]\rLoading weights:  44%|████▍     | 149/339 [00:08\u003c00:08, 23.41it/s]\rLoading weights:  45%|████▌     | 153/339 [00:08\u003c00:07, 23.71it/s]\rLoading weights:  50%|████▉     | 168/339 [00:08\u003c00:04, 37.12it/s]\rLoading weights:  52%|█████▏    | 175/339 [00:09\u003c00:08, 19.69it/s]\rLoading weights:  55%|█████▍    | 186/339 [00:09\u003c00:06, 23.97it/s]\rLoading weights:  58%|█████▊    | 196/339 [00:10\u003c00:05, 27.44it/s]\rLoading weights:  61%|██████▏   | 208/339 [00:10\u003c00:03, 35.75it/s]\rLoading weights:  63%|██████▎   | 214/339 [00:10\u003c00:03, 32.43it/s]\rLoading weights:  65%|██████▌   | 221/339 [00:10\u003c00:03, 37.17it/s]\rLoading weights:  68%|██████▊   | 232/339 [00:10\u003c00:03, 34.54it/s]\rLoading weights:  72%|███████▏  | 244/339 [00:11\u003c00:02, 44.91it/s]\rLoading weights:  74%|███████▍  | 251/339 [00:11\u003c00:02, 43.35it/s]\rLoading weights:  76%|███████▌  | 257/339 [00:12\u003c00:06, 12.29it/s]\rLoading weights:  77%|███████▋  | 261/339 [00:13\u003c00:05, 13.87it/s]\rLoading weights:  79%|███████▉  | 269/339 [00:13\u003c00:05, 13.95it/s]\rLoading weights:  84%|████████▍ | 284/339 [00:13\u003c00:02, 24.27it/s]\rLoading weights:  86%|████████▌ | 292/339 [00:14\u003c00:01, 24.91it/s]\rLoading weights:  90%|████████▉ | 304/339 [00:14\u003c00:01, 33.90it/s]\rLoading weights:  92%|█████████▏| 311/339 [00:14\u003c00:00, 30.87it/s]\rLoading weights:  94%|█████████▍| 318/339 [00:14\u003c00:00, 35.67it/s]\rLoading weights:  97%|█████████▋| 328/339 [00:16\u003c00:00, 13.64it/s]\rLoading weights: 100%|██████████| 339/339 [00:16\u003c00:00, 20.87it/s]\n"}
+,{"stream_name":"stdout","time":128.012447115,"data":"model loaded (97s), digit ids [16, 17, 18, 19, 20]\n"}
+,{"stream_name":"stdout","time":128.180320388,"data":"example prompt:\n"}
+,{"stream_name":"stdout","time":128.180354931,"data":"\u003c|im_start|\u003esystem\n"}
+,{"stream_name":"stdout","time":128.180368454,"data":"You are a careful annotator of word meanings in short stories. Answer with a single digit.\u003c|im_end|\u003e\n"}
+,{"stream_name":"stdout","time":128.180371714,"data":"\u003c|im_start|\u003euser\n"}
+,{"stream_name":"stdout","time":128.180377869,"data":"Story:\n"}
+,{"stream_name":"stdout","time":128.180381448,"data":"The old machine hummed in the corner of the workshop. Clara examined its dusty dials with a furrowed brow. She wondered if it could be brought back to life. The potential couldn't be measured. She collected a battery reader and looked on earnestly, willing some life back into the old machine.\n"}
+,{"stream_name":"stdout","time":128.180385596,"data":"\n"}
+,{"stream_name":"stdout","time":128.18038814,"data":"In this story, how plausible is it that the word \"potential\" has this meaning:\n"}
+,{"stream_name":"stdout","time":128.180391119,"data":"\"the difference in electrical charge between two points in a circuit expressed in volts. For example: The circuit has a high potential difference.\"\n"}
+,{"stream_name":"stdout","time":128.180394176,"data":"\n"}
+,{"stream_name":"stdout","time":128.180396566,"data":"1 = the meaning does not fit at all, 2 = barely plausible, 3 = somewhat plausible, 4 = plausible, 5 = clearly the intended meaning.\n"}
+,{"stream_name":"stdout","time":128.180399411,"data":"Rating (1-5):\u003c|im_end|\u003e\n"}
+,{"stream_name":"stdout","time":128.180402115,"data":"\u003c|im_start|\u003eassistant\n"}
+,{"stream_name":"stdout","time":128.180404811,"data":"\n"}
+,{"stream_name":"stdout","time":128.180407231,"data":"prompt 'plain': 3798 rows\n"}
+,{"stream_name":"stdout","time":131.653888318,"data":"  16/3798\n"}
+,{"stream_name":"stdout","time":190.124972353,"data":"  416/3798\n"}
+,{"stream_name":"stdout","time":251.973405781,"data":"  816/3798\n"}
+,{"stream_name":"stdout","time":310.486028809,"data":"  1216/3798\n"}
+,{"stream_name":"stdout","time":368.244714407,"data":"  1616/3798\n"}
+,{"stream_name":"stdout","time":425.321146385,"data":"  2016/3798\n"}
+,{"stream_name":"stdout","time":481.506532798,"data":"  2416/3798\n"}
+,{"stream_name":"stdout","time":535.37232997,"data":"  2816/3798\n"}
+,{"stream_name":"stdout","time":586.757747461,"data":"  3216/3798\n"}
+,{"stream_name":"stdout","time":637.837246596,"data":"  3616/3798\n"}
+,{"stream_name":"stdout","time":658.856756638,"data":"prompt 'pair': 3798 rows\n"}
+,{"stream_name":"stdout","time":662.174613829,"data":"  16/3798\n"}
+,{"stream_name":"stdout","time":734.684327678,"data":"  416/3798\n"}
+,{"stream_name":"stdout","time":802.323510556,"data":"  816/3798\n"}
+,{"stream_name":"stdout","time":867.27020961,"data":"  1216/3798\n"}
+,{"stream_name":"stdout","time":931.847249549,"data":"  1616/3798\n"}
+,{"stream_name":"stdout","time":996.7113732,"data":"  2016/3798\n"}
+,{"stream_name":"stdout","time":1060.214082776,"data":"  2416/3798\n"}
+,{"stream_name":"stdout","time":1122.692393498,"data":"  2816/3798\n"}
+,{"stream_name":"stdout","time":1183.644642613,"data":"  3216/3798\n"}
+,{"stream_name":"stdout","time":1241.319100316,"data":"  3616/3798\n"}
+,{"stream_name":"stdout","time":1266.387751967,"data":"prompt 'readers': 3798 rows\n"}
+,{"stream_name":"stdout","time":1269.311191884,"data":"  16/3798\n"}
+,{"stream_name":"stdout","time":1335.983507276,"data":"  416/3798\n"}
+,{"stream_name":"stdout","time":1399.897354487,"data":"  816/3798\n"}
+,{"stream_name":"stdout","time":1464.398728811,"data":"  1216/3798\n"}
+,{"stream_name":"stdout","time":1528.377545668,"data":"  1616/3798\n"}
+,{"stream_name":"stdout","time":1591.529642438,"data":"  2016/3798\n"}
+,{"stream_name":"stdout","time":1653.81643877,"data":"  2416/3798\n"}
+,{"stream_name":"stdout","time":1715.389882464,"data":"  2816/3798\n"}
+,{"stream_name":"stdout","time":1775.694072688,"data":"  3216/3798\n"}
+,{"stream_name":"stdout","time":1833.809172362,"data":"  3616/3798\n"}
+,{"stream_name":"stdout","time":1859.744563222,"data":"OOF     plain: rho=0.6038 acc=0.6733\n"}
+,{"stream_name":"stdout","time":1859.744621501,"data":"OOF      pair: rho=0.6673 acc=0.7744\n"}
+,{"stream_name":"stdout","time":1859.744628571,"data":"OOF   readers: rho=0.5951 acc=0.6987\n"}
+,{"stream_name":"stdout","time":1859.744633071,"data":"OOF      mean: rho=0.6709 acc=0.7685\n"}
+,{"stream_name":"stdout","time":1859.744637541,"data":"TEST     mean: rho=0.6800 acc=0.7785\n"}
+,{"stream_name":"stdout","time":1859.744642001,"data":"done in 30.5 min\n"}
+,{"stream_name":"stderr","time":1865.88514402,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1865.885186387,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1866.149150416,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1866.149183736,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1866.930933282,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1867.906126708,"data":"[NbConvertApp] Writing 331705 bytes to __results__.html\n"}
+]

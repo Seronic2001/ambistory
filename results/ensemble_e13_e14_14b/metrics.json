@@ -1,0 +1,52 @@
+{
+  "runs": [
+    "results/e13_6ep_3seeds",
+    "results/e14_llm_judge_qwen14b/e14"
+  ],
+  "single_runs_oof": [
+    {
+      "spearman": 0.638281447772534,
+      "accuracy": 0.7869595536959554
+    },
+    {
+      "spearman": 0.7031512639014492,
+      "accuracy": 0.8207810320781032
+    }
+  ],
+  "weights": [
+    0.45,
+    0.55
+  ],
+  "oof_weighted": {
+    "spearman": 0.746904421529703,
+    "accuracy": 0.8577405857740585
+  },
+  "rank_blend_used": true,
+  "calibration": {
+    "scale": 0.8500000000000001,
+    "shift": -0.04999999999999938,
+    "center": 3.1236802790933282
+  },
+  "oof_final": {
+    "spearman": 0.7533080443820855,
+    "accuracy": 0.8668061366806137
+  },
+  "test_single_runs": [
+    {
+      "spearman": 0.6943359830985069,
+      "accuracy": 0.7924731182795699
+    },
+    {
+      "spearman": 0.7418476665324878,
+      "accuracy": 0.8344086021505376
+    }
+  ],
+  "test_weighted": {
+    "spearman": 0.7896786025679057,
+    "accuracy": 0.8688172043010752
+  },
+  "test_final": {
+    "spearman": 0.7907532112904588,
+    "accuracy": 0.864516129032258
+  }
+}

@@ -1,0 +1,116 @@
+[{"stream_name":"stdout","time":4.1213541320000004,"data":"/usr/bin/python3 /tmp/code/kaggle/e13_train.py --data /tmp/code/data --out /kaggle/working/a13-nli-base --epochs 6 --model cross-encoder/nli-deberta-v3-base --test_gold /kaggle/input/datasets/shubhadeepmandal/inlp-project/test.json\n"}
+,{"stream_name":"stdout","time":22.680882781,"data":"data=/tmp/code/data\n"}
+,{"stream_name":"stdout","time":22.680915997,"data":"out=/kaggle/working/a13-nli-base\n"}
+,{"stream_name":"stdout","time":22.680920891,"data":"devices=['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":22.680924689,"data":"torch=2.11.0+cu128 transformers=5.16.1\n"}
+,{"stream_name":"stderr","time":23.236688344,"data":"\rFetching 7 files:   0%|          | 0/7 [00:00\u003c?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":27.373686236,"data":"\rFetching 7 files:  14%|█▍        | 1/7 [00:00\u003c00:00,  9.52it/s]\rFetching 7 files:  71%|███████▏  | 5/7 [00:00\u003c00:00, 13.10it/s]\rFetching 7 files: 100%|██████████| 7/7 [00:04\u003c00:00,  1.30it/s]\rFetching 7 files: 100%|██████████| 7/7 [00:04\u003c00:00,  1.66it/s]\n"}
+,{"stream_name":"stdout","time":27.373742272,"data":"backbone ready at /root/.cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7 (5s)\n"}
+,{"stream_name":"stdout","time":27.689733003,"data":"rows: train+dev=2868 test=930 | example input: The old machine hummed in the corner of the workshop. Clara examined its dusty dials with a furrowed brow. She wondered if it could be brought back to life. The...\n"}
+,{"stream_name":"stdout","time":27.689762224,"data":"5 fold jobs on 2 device(s)\n"}
+,{"stream_name":"stdout","time":43.634585333,"data":"22:44:30 [gpu1] fold 1 seed 42: inner-train=1938 inner-val=354 outer-val=576\n"}
+,{"stream_name":"stdout","time":43.63461158,"data":"22:44:30 [gpu0] fold 0 seed 42: inner-train=1932 inner-val=360 outer-val=576\n"}
+,{"stream_name":"stderr","time":46.239155053,"data":"\rLoading weights:   0%|          | 0/198 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/198 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 198/198 [00:00\u003c00:00, 2996.76it/s]\n"}
+,{"stream_name":"stderr","time":46.24187976,"data":"\rLoading weights: 100%|██████████| 198/198 [00:00\u003c00:00, 2776.24it/s]\n"}
+,{"stream_name":"stderr","time":46.256217609,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /root/.cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7\n"}
+,{"stream_name":"stderr","time":46.256238059,"data":"Key                 | Status     |  | \n"}
+,{"stream_name":"stderr","time":46.256243402,"data":"--------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":46.256247963,"data":"classifier.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256252703,"data":"pooler.dense.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256257287,"data":"pooler.dense.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256261646,"data":"classifier.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256265941,"data":"\n"}
+,{"stream_name":"stderr","time":46.256270342,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":46.256274812,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":46.256448406,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /root/.cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7\n"}
+,{"stream_name":"stderr","time":46.256471894,"data":"Key                 | Status     |  | \n"}
+,{"stream_name":"stderr","time":46.256475749,"data":"--------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":46.256479403,"data":"pooler.dense.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256482725,"data":"classifier.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256486058,"data":"classifier.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.256489401,"data":"pooler.dense.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":46.2564929,"data":"\n"}
+,{"stream_name":"stderr","time":46.256496153,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":46.256499593,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":72.998820193,"data":"22:45:00 [gpu0]   ep 1/6 loss=1.2740 inner-val rho=0.2468 rank-pairs=940 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":73.192559621,"data":"22:45:00 [gpu1]   ep 1/6 loss=1.3744 inner-val rho=0.1156 rank-pairs=939 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":97.961652562,"data":"22:45:25 [gpu0]   ep 2/6 loss=1.1255 inner-val rho=0.3137 rank-pairs=940 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":98.213623631,"data":"22:45:25 [gpu1]   ep 2/6 loss=1.1643 inner-val rho=0.1765 rank-pairs=939 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":123.680024967,"data":"22:45:50 [gpu0]   ep 3/6 loss=0.9560 inner-val rho=0.3767 rank-pairs=940 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":123.907894117,"data":"22:45:51 [gpu1]   ep 3/6 loss=1.0106 inner-val rho=0.2405 rank-pairs=939 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":149.545303293,"data":"22:46:16 [gpu1]   ep 4/6 loss=0.8967 inner-val rho=0.2662 rank-pairs=939 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":149.598122591,"data":"22:46:16 [gpu0]   ep 4/6 loss=0.8248 inner-val rho=0.3895 rank-pairs=940 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":174.911064033,"data":"22:46:42 [gpu0]   ep 5/6 loss=0.7605 inner-val rho=0.4063 rank-pairs=940 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":174.925212232,"data":"22:46:42 [gpu1]   ep 5/6 loss=0.8232 inner-val rho=0.2847 rank-pairs=939 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":200.481158492,"data":"22:47:07 [gpu1]   ep 6/6 loss=0.7838 inner-val rho=0.2858 rank-pairs=939 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":200.531645437,"data":"22:47:07 [gpu0]   ep 6/6 loss=0.7301 inner-val rho=0.4080 rank-pairs=940 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":204.843053491,"data":"22:47:12 [gpu1] fold 1 seed 42: OUTER rho=0.3372 acc=0.6250 (2.7 min)\n"}
+,{"stream_name":"stdout","time":205.046354465,"data":"22:47:12 [gpu1] fold 2 seed 42: inner-train=1944 inner-val=348 outer-val=576\n"}
+,{"stream_name":"stdout","time":205.266524503,"data":"22:47:12 [gpu0] fold 0 seed 42: OUTER rho=0.3563 acc=0.6493 (2.7 min)\n"}
+,{"stream_name":"stdout","time":205.514604595,"data":"22:47:12 [gpu0] fold 3 seed 42: inner-train=1926 inner-val=372 outer-val=570\n"}
+,{"stream_name":"stderr","time":206.03580226,"data":"\rLoading weights:   0%|          | 0/198 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 198/198 [00:00\u003c00:00, 2679.69it/s]\n"}
+,{"stream_name":"stderr","time":206.0440727,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /root/.cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7\n"}
+,{"stream_name":"stderr","time":206.04411111,"data":"Key                 | Status     |  | \n"}
+,{"stream_name":"stderr","time":206.04411558,"data":"--------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":206.04411894,"data":"classifier.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.044137862,"data":"pooler.dense.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.044141766,"data":"pooler.dense.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.044145942,"data":"classifier.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.04414921,"data":"\n"}
+,{"stream_name":"stderr","time":206.04415306,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":206.044156875,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stderr","time":206.596832258,"data":"\rLoading weights:   0%|          | 0/198 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 198/198 [00:00\u003c00:00, 2733.66it/s]\n"}
+,{"stream_name":"stderr","time":206.602148816,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /root/.cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7\n"}
+,{"stream_name":"stderr","time":206.602169783,"data":"Key                 | Status     |  | \n"}
+,{"stream_name":"stderr","time":206.602174081,"data":"--------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":206.602177929,"data":"pooler.dense.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.60218153900001,"data":"classifier.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.602184891,"data":"classifier.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.602188331,"data":"pooler.dense.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":206.6021919,"data":"\n"}
+,{"stream_name":"stderr","time":206.602195159,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":206.602198633,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":231.258942082,"data":"22:47:38 [gpu1]   ep 1/6 loss=1.2936 inner-val rho=0.1449 rank-pairs=936 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":232.090658049,"data":"22:47:39 [gpu0]   ep 1/6 loss=1.2618 inner-val rho=0.3019 rank-pairs=932 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":256.741767003,"data":"22:48:03 [gpu1]   ep 2/6 loss=1.1262 inner-val rho=0.2052 rank-pairs=936 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":257.669808303,"data":"22:48:04 [gpu0]   ep 2/6 loss=1.0974 inner-val rho=0.3404 rank-pairs=932 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":282.33202969,"data":"22:48:29 [gpu1]   ep 3/6 loss=0.9733 inner-val rho=0.2132 rank-pairs=936 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":283.38735715,"data":"22:48:30 [gpu0]   ep 3/6 loss=0.9577 inner-val rho=0.4407 rank-pairs=932 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":307.701155101,"data":"22:48:54 [gpu1]   ep 4/6 loss=0.8557 inner-val rho=0.2465 rank-pairs=936 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":308.964119789,"data":"22:48:56 [gpu0]   ep 4/6 loss=0.8177 inner-val rho=0.4464 rank-pairs=932 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":333.166356731,"data":"22:49:20 [gpu1]   ep 5/6 loss=0.7860 inner-val rho=0.2503 rank-pairs=936 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":334.418125175,"data":"22:49:21 [gpu0]   ep 5/6 loss=0.7654 inner-val rho=0.4506 rank-pairs=932 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":358.520158761,"data":"22:49:45 [gpu1]   ep 6/6 loss=0.7504 inner-val rho=0.2514 rank-pairs=936 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":359.865771053,"data":"22:49:47 [gpu0]   ep 6/6 loss=0.7288 inner-val rho=0.4512 rank-pairs=932 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":362.903963592,"data":"22:49:50 [gpu1] fold 2 seed 42: OUTER rho=0.3626 acc=0.6458 (2.6 min)\n"}
+,{"stream_name":"stdout","time":363.110489347,"data":"22:49:50 [gpu1] fold 4 seed 42: inner-train=1950 inner-val=348 outer-val=570\n"}
+,{"stream_name":"stderr","time":363.871017136,"data":"\rLoading weights:   0%|          | 0/198 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 198/198 [00:00\u003c00:00, 2787.83it/s]\n"}
+,{"stream_name":"stderr","time":363.876443311,"data":"[transformers] \u001b[1mDebertaV2Model LOAD REPORT\u001b[0m from: /root/.cache/huggingface/hub/models--cross-encoder--nli-deberta-v3-base/snapshots/6c749ce3425cd33b46d187e45b92bbf96ee12ec7\n"}
+,{"stream_name":"stderr","time":363.876463714,"data":"Key                 | Status     |  | \n"}
+,{"stream_name":"stderr","time":363.876467721,"data":"--------------------+------------+--+-\n"}
+,{"stream_name":"stderr","time":363.876471258,"data":"classifier.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":363.876474786,"data":"pooler.dense.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":363.876478137,"data":"pooler.dense.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":363.876481289,"data":"classifier.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stderr","time":363.876494582,"data":"\n"}
+,{"stream_name":"stderr","time":363.876497721,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":363.876500971,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":364.497681579,"data":"22:49:51 [gpu0] fold 3 seed 42: OUTER rho=0.3387 acc=0.6281 (2.6 min)\n"}
+,{"stream_name":"stdout","time":389.158427345,"data":"22:50:16 [gpu1]   ep 1/6 loss=1.4949 inner-val rho=0.1437 rank-pairs=943 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":414.75521882,"data":"22:50:41 [gpu1]   ep 2/6 loss=1.1477 inner-val rho=0.2317 rank-pairs=943 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":440.248599176,"data":"22:51:07 [gpu1]   ep 3/6 loss=0.9671 inner-val rho=0.2886 rank-pairs=943 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":465.550089517,"data":"22:51:32 [gpu1]   ep 4/6 loss=0.8297 inner-val rho=0.3203 rank-pairs=943 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":490.939898489,"data":"22:51:58 [gpu1]   ep 5/6 loss=0.7539 inner-val rho=0.3205 rank-pairs=943 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":516.341652332,"data":"22:52:23 [gpu1]   ep 6/6 loss=0.7191 inner-val rho=0.3195 rank-pairs=943 skipped=0 (0.4 min)\n"}
+,{"stream_name":"stdout","time":520.236959791,"data":"22:52:27 [gpu1] fold 4 seed 42: OUTER rho=0.2729 acc=0.6070 (2.6 min)\n"}
+,{"stream_name":"stdout","time":522.381538095,"data":"TEST (official metric) rho=0.4260 acc=0.6677 | without blend rho=0.3839\n"}
+,{"stream_name":"stdout","time":522.384121663,"data":"\n"}
+,{"stream_name":"stdout","time":522.384145188,"data":"OOF rho=0.3293 acc=0.6311 | per-fold rho=0.3335+-0.0319 | rank blend used (OOF rho 0.3613)\n"}
+,{"stream_name":"stdout","time":522.38415262,"data":"wrote /kaggle/working/a13-nli-base/predictions.jsonl  (8.3 min total)\n"}
+,{"stream_name":"stderr","time":524.817272149,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":524.817297714,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":525.031481411,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":525.031505035,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":525.758243537,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":526.634594386,"data":"[NbConvertApp] Writing 280252 bytes to __results__.html\n"}
+]

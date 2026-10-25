@@ -1,0 +1,52 @@
+{
+  "runs": [
+    "results/e14_llm_judge_qwen14b/e14",
+    "results/e14_llm_judge_qwen32b/e14"
+  ],
+  "single_runs_oof": [
+    {
+      "spearman": 0.7031512639014492,
+      "accuracy": 0.8207810320781032
+    },
+    {
+      "spearman": 0.7563565824973927,
+      "accuracy": 0.8155509065550907
+    }
+  ],
+  "weights": [
+    0.2,
+    0.8
+  ],
+  "oof_weighted": {
+    "spearman": 0.7577017843043059,
+    "accuracy": 0.8385634588563459
+  },
+  "rank_blend_used": false,
+  "calibration": {
+    "scale": 0.8,
+    "shift": 0.10000000000000075,
+    "center": 2.96700470386855
+  },
+  "oof_final": {
+    "spearman": 0.7577017843043059,
+    "accuracy": 0.8723849372384938
+  },
+  "test_single_runs": [
+    {
+      "spearman": 0.7418476665324878,
+      "accuracy": 0.8344086021505376
+    },
+    {
+      "spearman": 0.7774680676101251,
+      "accuracy": 0.8365591397849462
+    }
+  ],
+  "test_weighted": {
+    "spearman": 0.7837092876742052,
+    "accuracy": 0.8559139784946237
+  },
+  "test_final": {
+    "spearman": 0.7837092876742052,
+    "accuracy": 0.8849462365591397
+  }
+}

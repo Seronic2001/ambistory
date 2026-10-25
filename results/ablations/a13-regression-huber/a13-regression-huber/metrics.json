@@ -1,0 +1,37 @@
+{
+  "oof": {
+    "spearman": 0.5872496237634166,
+    "accuracy": 0.75697350069735
+  },
+  "oof_with_rank_blend": {
+    "spearman": 0.6226043536895125,
+    "accuracy": 0.7810320781032078
+  },
+  "rank_blend_used": true,
+  "per_fold_mean_std": {
+    "spearman": [
+      0.6018220218245653,
+      0.047019146987805134
+    ],
+    "accuracy": [
+      0.7569700292397662,
+      0.042209072784138164
+    ]
+  },
+  "seeds": [
+    42
+  ],
+  "minutes": 18.563968614737192,
+  "devices": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "test": {
+    "spearman": 0.704026282022932,
+    "accuracy": 0.8053763440860215
+  },
+  "test_without_rank_blend": {
+    "spearman": 0.6751410427325003,
+    "accuracy": 0.7741935483870968
+  }
+}

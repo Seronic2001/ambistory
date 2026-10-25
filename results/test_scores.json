@@ -1,0 +1,22 @@
+{
+  "E09": {
+    "source_file": "eval_scores_submission_model9.json",
+    "spearman": 0.1270998706580313,
+    "accuracy": 0.5602150537634408
+  },
+  "E10": {
+    "source_file": "eval_scores_DeBERTaCross-Encoder with Grouped 5-Fold CV.json",
+    "spearman": 0.39160893651352485,
+    "accuracy": 0.6516129032258065
+  },
+  "E11": {
+    "source_file": "eval_scores_NLI Warm-Start and PCA Ablation.json",
+    "spearman": 0.40019550734110165,
+    "accuracy": 0.6516129032258065
+  },
+  "E12": {
+    "source_file": "eval_scores_MPNet Bi-Encoder with Geometric Features.json",
+    "spearman": 0.5354891465647512,
+    "accuracy": 0.7215053763440861
+  }
+}

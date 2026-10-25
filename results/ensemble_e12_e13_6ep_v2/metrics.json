@@ -1,0 +1,52 @@
+{
+  "runs": [
+    "/kaggle/input/notebooks/shubhadeepmandal/ambistory-e12-train/e12",
+    "/kaggle/working/e13"
+  ],
+  "single_runs_oof": [
+    {
+      "spearman": 0.536716467802342,
+      "accuracy": 0.7196652719665272
+    },
+    {
+      "spearman": 0.6131075505772923,
+      "accuracy": 0.7726638772663877
+    }
+  ],
+  "weights": [
+    0.4,
+    0.6
+  ],
+  "oof_weighted": {
+    "spearman": 0.6500699200237237,
+    "accuracy": 0.7834728033472803
+  },
+  "rank_blend_used": true,
+  "calibration": {
+    "scale": 1.1000000000000003,
+    "shift": -0.14999999999999947,
+    "center": 3.206495080561568
+  },
+  "oof_final": {
+    "spearman": 0.6665104553649766,
+    "accuracy": 0.8131101813110181
+  },
+  "test_single_runs": [
+    {
+      "spearman": 0.5490085274484857,
+      "accuracy": 0.7064516129032258
+    },
+    {
+      "spearman": 0.6894977157864387,
+      "accuracy": 0.7806451612903226
+    }
+  ],
+  "test_weighted": {
+    "spearman": 0.6976778924739074,
+    "accuracy": 0.7698924731182796
+  },
+  "test_final": {
+    "spearman": 0.7023318167452647,
+    "accuracy": 0.8344086021505376
+  }
+}

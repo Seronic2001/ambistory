@@ -1,0 +1,74 @@
+[{"stream_name":"stdout","time":2.141597446,"data":"/usr/bin/python3 /tmp/code/kaggle/e12_train.py --data /tmp/code/data --out /kaggle/working/a12-no-swa --swa_start 2.0 --test_gold /kaggle/input/datasets/shubhadeepmandal/inlp-project/test.json\n"}
+,{"stream_name":"stdout","time":10.679368113,"data":"data=/tmp/code/data\n"}
+,{"stream_name":"stdout","time":10.67939709,"data":"out=/kaggle/working/a12-no-swa\n"}
+,{"stream_name":"stdout","time":10.679400345,"data":"devices=['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stderr","time":12.029804012,"data":"\rFetching 11 files:   0%|          | 0/11 [00:00\u003c?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":13.764203391,"data":"\rFetching 11 files:   9%|▉         | 1/11 [00:00\u003c00:01,  8.36it/s]\rFetching 11 files: 100%|██████████| 11/11 [00:01\u003c00:00,  6.13it/s]\rFetching 11 files: 100%|██████████| 11/11 [00:01\u003c00:00,  6.17it/s]\n"}
+,{"stream_name":"stderr","time":18.198858706,"data":"\rFetching 7 files:   0%|          | 0/7 [00:00\u003c?, ?it/s]\rFetching 7 files:  71%|███████▏  | 5/7 [00:00\u003c00:00, 37.64it/s]\rFetching 7 files: 100%|██████████| 7/7 [00:04\u003c00:00,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":18.498355904,"data":"rows: train+dev=2868 test=930 | fold sizes=[576, 576, 576, 570, 570]\n"}
+,{"stream_name":"stderr","time":48.984037074,"data":"\rLoading weights:   0%|          | 0/202 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/202 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 202/202 [00:00\u003c00:00, 2391.47it/s]\n"}
+,{"stream_name":"stderr","time":48.995771683,"data":"\rLoading weights: 100%|██████████| 202/202 [00:00\u003c00:00, 2433.58it/s]\n"}
+,{"stream_name":"stdout","time":54.98887093,"data":"20:48:46 [gpu0] CE shard 0/2: 1899 pairs in 6s (entailment idx 1)\n"}
+,{"stream_name":"stdout","time":55.138869419,"data":"20:48:47 [gpu1] CE shard 1/2: 1899 pairs in 6s (entailment idx 1)\n"}
+,{"stream_name":"stdout","time":58.844058353,"data":"CE scores ready (48s)\n"}
+,{"stream_name":"stdout","time":58.844081659,"data":"5 fold jobs on 2 device(s)\n"}
+,{"stream_name":"stdout","time":61.093336776,"data":"20:48:52 [gpu0] fold 0 seed 42: inner-train=1932 inner-val=360 outer-val=576 test=930\n"}
+,{"stream_name":"stdout","time":61.105786317,"data":"20:48:52 [gpu1] fold 1 seed 42: inner-train=1938 inner-val=354 outer-val=576 test=930\n"}
+,{"stream_name":"stderr","time":67.525895291,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2716.77it/s]\n"}
+,{"stream_name":"stderr","time":67.527369082,"data":"\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2775.80it/s]\n"}
+,{"stream_name":"stdout","time":80.319037554,"data":"20:49:12 [gpu1]   FT ep 1/6 inner-val rho=0.5037 rank-pairs=926 (13s)\n"}
+,{"stream_name":"stdout","time":80.357513574,"data":"20:49:12 [gpu0]   FT ep 1/6 inner-val rho=0.5148 rank-pairs=923 (13s)\n"}
+,{"stream_name":"stdout","time":92.6230382,"data":"20:49:24 [gpu0]   FT ep 2/6 inner-val rho=0.5516 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":92.655735276,"data":"20:49:24 [gpu1]   FT ep 2/6 inner-val rho=0.4808 rank-pairs=926 (12s)\n"}
+,{"stream_name":"stdout","time":104.408920923,"data":"20:49:36 [gpu1]   FT ep 3/6 inner-val rho=0.5190 rank-pairs=926 (12s)\n"}
+,{"stream_name":"stdout","time":104.783131345,"data":"20:49:36 [gpu0]   FT ep 3/6 inner-val rho=0.5524 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":116.587676109,"data":"20:49:48 [gpu0]   FT ep 4/6 inner-val rho=0.5453 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":116.663894422,"data":"20:49:48 [gpu1]   FT ep 4/6 inner-val rho=0.5032 rank-pairs=926 (12s)\n"}
+,{"stream_name":"stdout","time":128.637941608,"data":"20:50:00 [gpu0]   FT ep 5/6 inner-val rho=0.5451 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":128.63799812,"data":"20:50:00 [gpu0]   FT early stop at epoch 5\n"}
+,{"stream_name":"stdout","time":128.795598436,"data":"20:50:00 [gpu1]   FT ep 5/6 inner-val rho=0.4987 rank-pairs=926 (12s)\n"}
+,{"stream_name":"stdout","time":128.795632759,"data":"20:50:00 [gpu1]   FT early stop at epoch 5\n"}
+,{"stream_name":"stdout","time":165.637829891,"data":"20:50:37 [gpu0]   MLP best inner-val rho=0.5865\n"}
+,{"stream_name":"stdout","time":165.64186878,"data":"20:50:37 [gpu0] fold 0 seed 42: OUTER rho=0.6233 acc=0.7917 (1.7 min)\n"}
+,{"stream_name":"stdout","time":165.827701964,"data":"20:50:37 [gpu0] fold 2 seed 42: inner-train=1944 inner-val=348 outer-val=576 test=930\n"}
+,{"stream_name":"stderr","time":166.012839081,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2525.70it/s]\n"}
+,{"stream_name":"stdout","time":166.202516078,"data":"20:50:38 [gpu1]   MLP best inner-val rho=0.5475\n"}
+,{"stream_name":"stdout","time":166.207060645,"data":"20:50:38 [gpu1] fold 1 seed 42: OUTER rho=0.5362 acc=0.7014 (1.8 min)\n"}
+,{"stream_name":"stdout","time":166.353276919,"data":"20:50:38 [gpu1] fold 3 seed 42: inner-train=1926 inner-val=372 outer-val=570 test=930\n"}
+,{"stream_name":"stderr","time":166.518703318,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2786.81it/s]\n"}
+,{"stream_name":"stdout","time":177.886483284,"data":"20:50:49 [gpu0]   FT ep 1/6 inner-val rho=0.4926 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":178.458429984,"data":"20:50:50 [gpu1]   FT ep 1/6 inner-val rho=0.4977 rank-pairs=913 (12s)\n"}
+,{"stream_name":"stdout","time":189.863810573,"data":"20:51:01 [gpu0]   FT ep 2/6 inner-val rho=0.4922 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":190.503129853,"data":"20:51:02 [gpu1]   FT ep 2/6 inner-val rho=0.4574 rank-pairs=913 (12s)\n"}
+,{"stream_name":"stdout","time":202.131881946,"data":"20:51:14 [gpu0]   FT ep 3/6 inner-val rho=0.5201 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":202.954680754,"data":"20:51:14 [gpu1]   FT ep 3/6 inner-val rho=0.5536 rank-pairs=913 (12s)\n"}
+,{"stream_name":"stdout","time":214.548456389,"data":"20:51:26 [gpu0]   FT ep 4/6 inner-val rho=0.5004 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":215.287095741,"data":"20:51:27 [gpu1]   FT ep 4/6 inner-val rho=0.5185 rank-pairs=913 (12s)\n"}
+,{"stream_name":"stdout","time":226.335787759,"data":"20:51:38 [gpu0]   FT ep 5/6 inner-val rho=0.5143 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":226.335834345,"data":"20:51:38 [gpu0]   FT early stop at epoch 5\n"}
+,{"stream_name":"stdout","time":227.191495523,"data":"20:51:39 [gpu1]   FT ep 5/6 inner-val rho=0.5249 rank-pairs=913 (12s)\n"}
+,{"stream_name":"stdout","time":227.191526918,"data":"20:51:39 [gpu1]   FT early stop at epoch 5\n"}
+,{"stream_name":"stdout","time":262.538675752,"data":"20:52:14 [gpu0]   MLP best inner-val rho=0.5768\n"}
+,{"stream_name":"stdout","time":262.54315294,"data":"20:52:14 [gpu0] fold 2 seed 42: OUTER rho=0.5836 acc=0.7292 (1.6 min)\n"}
+,{"stream_name":"stdout","time":262.740859227,"data":"20:52:14 [gpu0] fold 4 seed 42: inner-train=1950 inner-val=348 outer-val=570 test=930\n"}
+,{"stream_name":"stderr","time":262.936091269,"data":"\rLoading weights:   0%|          | 0/199 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 199/199 [00:00\u003c00:00, 2532.01it/s]\n"}
+,{"stream_name":"stdout","time":263.771392729,"data":"20:52:15 [gpu1]   MLP best inner-val rho=0.5750\n"}
+,{"stream_name":"stdout","time":263.775173102,"data":"20:52:15 [gpu1] fold 3 seed 42: OUTER rho=0.4911 acc=0.6842 (1.6 min)\n"}
+,{"stream_name":"stdout","time":274.762972539,"data":"20:52:26 [gpu0]   FT ep 1/6 inner-val rho=0.4669 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":286.603480364,"data":"20:52:38 [gpu0]   FT ep 2/6 inner-val rho=0.5461 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":298.783822254,"data":"20:52:50 [gpu0]   FT ep 3/6 inner-val rho=0.5326 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":310.454302672,"data":"20:53:02 [gpu0]   FT ep 4/6 inner-val rho=0.5247 rank-pairs=923 (12s)\n"}
+,{"stream_name":"stdout","time":310.454346717,"data":"20:53:02 [gpu0]   FT early stop at epoch 4\n"}
+,{"stream_name":"stdout","time":330.590367391,"data":"20:53:22 [gpu0]   MLP best inner-val rho=0.5681\n"}
+,{"stream_name":"stdout","time":330.59402596,"data":"20:53:22 [gpu0] fold 4 seed 42: OUTER rho=0.5017 acc=0.7018 (1.1 min)\n"}
+,{"stream_name":"stdout","time":332.166427676,"data":"TEST (official metric) rho=0.5552 acc=0.7419 | without blend rho=0.5451\n"}
+,{"stream_name":"stdout","time":332.169954271,"data":"\n"}
+,{"stream_name":"stdout","time":332.169976263,"data":"OOF rho=0.5420 acc=0.7218 | per-fold rho=0.5472+-0.0499 | rank blend used (OOF rho 0.5424)\n"}
+,{"stream_name":"stdout","time":332.169999079,"data":"wrote /kaggle/working/a12-no-swa/predictions.jsonl  (5.4 min total)\n"}
+,{"stream_name":"stderr","time":334.657579946,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":334.657608118,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":334.901884359,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":334.901908356,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":335.653794315,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":336.608575987,"data":"[NbConvertApp] Writing 280075 bytes to __results__.html\n"}
+]
