@@ -1,0 +1,11 @@
+# Serving app.py (CPU or GPU). Versions are the ones the app was tested with.
+# CPU-only torch is much smaller: pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0
+transformers==5.16.1
+tokenizers==0.23.3
+safetensors==0.8.0
+sentencepiece==0.2.2
+huggingface_hub==1.33.0
+numpy==2.5.2
+pandas==3.1.0
+streamlit==1.66.1

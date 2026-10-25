@@ -193,7 +193,7 @@ train+dev, 2 seeds averaged. On the official test set these exact checkpoints sc
 python kaggle/kernels.py --dir kaggle/kernels/
 kaggle kernels push -p kaggle/kernels/e13-deploy --accelerator NvidiaTeslaT4
 kaggle kernels output shubhadeepmandal/ambistory-e13-deploy -p out/   # copy out/e13_deploy/model_seed* to models/e13/
-pip install torch transformers safetensors sentencepiece streamlit pandas
+pip install -r requirements.txt                           # tested versions; CPU-only torch: see the file
 streamlit run app.py                                      # 2. serve (AMBISTORY_MODELS=... to use another folder)
 ```
 
@@ -201,6 +201,16 @@ Tabs: score one story + meaning (with the 5-class rating distribution); compare 
 (the rank blend is applied to the pair); batch-score an AmbiStory JSON file, with official metrics when it has labels
 and a CodaBench `predictions.jsonl` download. Runs on CPU (~3.5 GB RAM) or GPU (fp16 backbone, fits in 3 GB).
 The LLM blends (E14) are not served: they need a 14B–32B model on GPUs.
+
+Deployment notes (measured on the deployed checkpoints):
+- **Quantization does not work here.** PyTorch dynamic int8 on every linear layer drops the agreement with the
+  full-precision scores to a correlation of ~0.03–0.08 (test ρ 0.70 → 0.13). The culprit is the feed-forward layers
+  (DeBERTa-v3's activation outliers): quantizing only those 48 layers already breaks it, while quantizing only the
+  attention layers keeps 0.98 correlation but is just 1.17× faster. So the app serves the weights unquantized.
+- **CPU cost:** ~1.2 s per story–meaning pair per model on a 4-core laptop, i.e. ~2.3 s per score with both seeds;
+  ~3.3 GB RAM (fp32), which is more than Streamlit Community Cloud provides.
+- **Hosting:** Hugging Face Docker/Gradio Spaces need a PRO subscription even on the free CPU tier, so there is no
+  hosted demo; the app runs locally and fetches the weights from Hugging Face.
 
 ## Training E12 on Kaggle (both GPUs)
 
