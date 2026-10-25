@@ -27,6 +27,7 @@ from e12_train import soft_rank_blend  # noqa: E402
 from e13_train import build_inputs, load_deployed  # noqa: E402
 
 MODEL_DIR = os.environ.get("AMBISTORY_MODELS", os.path.join(HERE, "models", "e13"))
+HF_REPO = os.environ.get("AMBISTORY_HF_REPO", "Seronic/ambistory-e13")  # downloaded when MODEL_DIR has no models
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 BATCH = 8
 
@@ -34,6 +35,10 @@ BATCH = 8
 @st.cache_resource(show_spinner=False)
 def load_models():
     dirs = sorted(glob.glob(os.path.join(MODEL_DIR, "model_seed*")))
+    if not dirs and HF_REPO:
+        from huggingface_hub import snapshot_download
+        snapshot_download(HF_REPO, local_dir=MODEL_DIR, allow_patterns=["model_seed*/*", "deploy_metrics.json"])
+        dirs = sorted(glob.glob(os.path.join(MODEL_DIR, "model_seed*")))
     if not dirs:
         return [], {}
     models = []
@@ -109,7 +114,7 @@ st.set_page_config(page_title="AmbiStory Scorer", layout="wide")
 st.title("AmbiStory Plausibility Scorer")
 st.caption("How plausible is a given sense of an ambiguous word in a short story? (SemEval 2026 Task 5)")
 
-with st.spinner("Loading models (first run only)..."):
+with st.spinner("Loading models (first run downloads ~1.7 GB from Hugging Face if they are not local)..."):
     MODELS, REPORT = load_models()
 
 with st.sidebar:

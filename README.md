@@ -188,7 +188,9 @@ train+dev, 2 seeds averaged. On the official test set these exact checkpoints sc
 **80.1%** (`models/e13/deploy_metrics.json`, with the within-setup rank blend; 0.681 / 78.0% without it).
 
 ```bash
-python kaggle/kernels.py --dir kaggle/kernels/            # 1. train (8 min on Kaggle 2x T4), or reuse models/e13/
+# 1. weights: nothing to do. If models/e13/ is empty, the app downloads them (~1.7 GB) from
+#    https://huggingface.co/Seronic/ambistory-e13. To retrain instead (8 min on Kaggle 2x T4):
+python kaggle/kernels.py --dir kaggle/kernels/
 kaggle kernels push -p kaggle/kernels/e13-deploy --accelerator NvidiaTeslaT4
 kaggle kernels output shubhadeepmandal/ambistory-e13-deploy -p out/   # copy out/e13_deploy/model_seed* to models/e13/
 pip install torch transformers safetensors sentencepiece streamlit pandas
